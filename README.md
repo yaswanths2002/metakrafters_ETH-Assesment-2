@@ -1,13 +1,44 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Installation
 
-Try running some of the following tasks:
+First clone the project using this:https://github.com/yaswanths2002/metakrafters_ETH-Assesment-2.git
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+Next open the terminal and navigagte to smart-contract directory by using 
+```bash
+cd smart-contract
 ```
+Next run the below commands one by one 
+```bash
+  npm init --yes
+  npm install --save-dev hardhat
+  npx hardhat
+  npx hardhat compile
+```
+If you get any error in the 'npx hardhat compile' command run the below command and re-run the 'npx hardhat compile' command
+```bash
+npm i @nomicfoundation/hardhat-toolbox
+```
+Next be in the smart-contract folder only and run the below command
+```bash
+npx hardhat node 
+```
+The above command will start the Hardhat network in the background.
+Next go to the frontend folder by using the below command
+```bash
+cd frontend 
+```
+And install the dependencies by running the below command one after another
+```bash
+npm install
+npm install ethers@5.7.2 --save
+```
+And now open the new terminal and navigate to smart contract folder and run the below command to deploy the smart contract
+```bash
+npx hardhat run scripts/deploy.js --network localhost
+```
+The above command will run our deploy.js script in the Hardhat Network.
+And next navigate to frontend folder and run the below command to start the react server
+```bash
+npm start
+```
+    
