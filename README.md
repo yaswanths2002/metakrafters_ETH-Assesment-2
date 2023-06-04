@@ -1,4 +1,9 @@
 
+# Simple Daap Application 
+
+This is a simple application in which we can join the challenges(i.eQuests) and also can submit the quests after completing them.I have used react for the frontend part
+
+
 ## Installation
 
 First clone the project using this:https://github.com/yaswanths2002/metakrafters_ETH-Assesment-2.git
